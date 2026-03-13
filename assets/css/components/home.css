@@ -1,0 +1,30 @@
+@import url("../theme.css");
+@import url("../style.css");
+.container {
+    width: 90%;
+    max-width: 2024px;
+    min-height: 100%;
+    margin: auto;
+}
+
+.container .h-name {
+    width: 100%;
+    min-height: 100%;
+    margin-top: 5%;
+    margin-bottom: 100px;
+}
+
+.container .h-name h1 {
+    font-family: Nunito, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+}
+.container .h-name h2{
+    font-family: Nunito, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--color-subtext);
+}
