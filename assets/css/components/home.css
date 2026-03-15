@@ -1,11 +1,24 @@
 @import url("../theme.css");
 @import url("../style.css");
+/* configurações globais */
 .container {
     width: 90%;
     max-width: 2024px;
     min-height: 100%;
     margin: auto;
+
 }
+
+h1,
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.h-experiencia h1,h2{
+    color:black;
+}
+
+/* nome e sobre */
 
 .container .h-name {
     width: 100%;
@@ -15,16 +28,61 @@
 }
 
 .container .h-name h1 {
-    font-family: Nunito, Arial, sans-serif;
-    font-weight: bold;
     font-size: 40px;
-    text-transform: uppercase;
+
     color: black;
 }
-.container .h-name h2{
-    font-family: Nunito, Arial, sans-serif;
-    font-weight: bold;
+
+.container .h-name h2 {
     font-size: 32px;
-    text-transform: uppercase;
     color: var(--color-subtext);
+}
+
+.container .h-sobre .h-title-sobre {
+    height: 50px;
+    border-bottom: 2px solid var(--color-subtext);
+    margin-bottom: 25px;
+}
+
+.container .h-sobre .h-title-sobre h2 {
+    margin-top: 5%;
+    font-size: 26px;
+}
+
+.container .h-sobre .paragrfo {
+    font-weight: normal;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/*experiencia*/
+
+.container .h-experiencia .h-title-experiencia {
+    height: 50px;
+    border-bottom: 2px solid var(--color-subtext);
+    margin-bottom: 50px;
+
+}
+.container .h-experiencia .h-title-experiencia h2{
+   margin-top: 5%;
+   font-size:26px;
+}
+.container .h-experiencia .h-items{
+
+   min-height: 100px;
+}
+.container .h-experiencia .h-items .item{
+ flex-direction: row;
+    min-height: 220px;
+}
+
+.container .h-experiencia .h-items .item .work{
+    flex-direction:column;
+   min-width:25%;
+   max-width:25%;
+   min-height: 100px;
+}
+.container .h-experiencia .h-items .item .work .h2{
+   font-size:22px;
+   margin-bottom:10px;
 }
