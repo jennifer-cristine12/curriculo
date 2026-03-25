@@ -1,0 +1,12 @@
+@import url("style.css");
+.w-100{
+    width:100% !important;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}

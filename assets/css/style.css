@@ -1,4 +1,7 @@
 @import url("./components/home.css");
+@import url("./utils.css");
+@import "./responsive.css";
+
 *{
     margin:0;
     padding:0;
@@ -8,5 +11,6 @@ html,body{
     width:100%;
     font-family: Nunito, Arial, sans-serif;
     font-weight: 600;
+    aspect-ratio: 9/16;
 
 }

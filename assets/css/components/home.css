@@ -1,5 +1,7 @@
 @import url("../theme.css");
 @import url("../style.css");
+@import url("../utils.css");
+@import "../responsive.css";
 
 /* configurações globais */
 .container {
@@ -81,17 +83,19 @@ h2 {
 }
 
 .container .h-experiencia .h-items {
-    min-width: 690px;
+   
     flex-wrap: wrap;
     min-height: 100px;
 }
 
 .container .h-experiencia .h-items .item {
+    display:flex;
     flex-direction: row;
     min-height: 220px;
 }
 
 .container .h-experiencia .h-items .item .work {
+    display:flex;
     flex-direction: column;
     min-width: 25%;
     max-width: 25%;
@@ -106,6 +110,8 @@ h2 {
 }
 
 .container .h-experiencia .h-items .item .descricao {
+     display:flex;
+     flex-direction: column;
     width: 75%;
 
     min-height: 100px;
@@ -164,80 +170,153 @@ h2 span {
     min-height: 100px;
     margin-bottom: 100px;
 }
+
 .container .h-habilidades .h-title-habilidades {
     width: 100%;
     height: 50px;
     border-bottom: 2px solid var(--color-subtext);
     margin-bottom: 50px;
 }
-.container .h-habilidades .h-title-habilidades h2{
+
+.container .h-habilidades .h-title-habilidades h2 {
     margin-top: 5%;
-    font-size:26px;
+    font-size: 26px;
 }
-.container .h-habilidades .item{
-    
+
+.container .h-habilidades .item {
+
     align-items: baseline;
-    width:50%;
-    margin-bottom:20px;
+    width: 50%;
+    margin-bottom: 20px;
 }
-.container .h-habilidades .item .title{
-    min-width:150px;
+
+.container .h-habilidades .item .title {
+    min-width: 150px;
 }
-.container .h-habilidades .item h2{
-    font-size:18px;
+
+.item h2 {
+    font-size: 18px;
 }
-.container .h-habilidades .item .icon{
-    position:relative;
-    width:200px;
-    height:18px;
-    overflow:hidden;
+
+.container .h-habilidades .item .icon {
+    position: relative;
+    width: 200px;
+    height: 18px;
+    overflow: hidden;
     border: 1px solid aliceblue;
     border-radius: 7px;
     background: transparent;
 
 }
+
 /*percentuais*/
 
-.container .h-habilidades .item .icon .percent-10{
+.container .h-habilidades .item .icon .percent-10 {
     width: 10%;
-    height:100%;
+    height: 100%;
     border-radius: 6px;
     background-color: var(--color-subtext);
 }
-.container .h-habilidades .item .icon .percent-60{
+
+.container .h-habilidades .item .icon .percent-60 {
     width: 60%;
-    height:100%;
+    height: 100%;
     border-radius: 6px;
     background-color: var(--color-subtext);
 }
-.container .h-habilidades .item .icon .percent-70{
+
+.container .h-habilidades .item .icon .percent-70 {
     width: 70%;
-    height:100%;
+    height: 100%;
     border-radius: 6px;
     background-color: var(--color-subtext);
 }
-.container .h-habilidades .item .icon .percent-80{
+
+.container .h-habilidades .item .icon .percent-80 {
     width: 80%;
-    height:100%;
+    height: 100%;
     border-radius: 6px;
     background-color: var(--color-subtext);
 }
-.container .h-habilidades .item .icon .percent-90{
+
+.container .h-habilidades .item .icon .percent-90 {
     width: 90%;
-    height:100%;
+    height: 100%;
     border-radius: 6px;
     background-color: var(--color-subtext);
 }
+
 /*Idiomas*/
 .container .h-idiomas {
     width: 100%;
     min-height: 100px;
     margin-bottom: 100px;
+
 }
 
-    .container .h-idiomas .h-title-idiomas {
-        width: 100%;
-        height: 50px;
-        border-bottom: 2px solid var(--color-subtext);
-        margin-bottom: 50px;
-    }
+.container .h-idiomas .h-title-idiomas {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--color-subtext);
+    margin-bottom: 50px;
+}
+.container .h-idiomas .h-title-idiomas h2 {
+    margin-top: 5%;
+    font-size: 26px;
+}
+.container .h-idiomas .items{
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+.container .h-contato .item {
+    width: 100%;
+    min-height: 80px;
+}
+.container .h-contato .item p {
+    font-weight: normal;
+    font-size: 18px;
+     text-align: justify;
+
+}
+
+/* Contato */
+
+.container .h-contato {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 100px;
+}
+
+.container .h-contato .h-title-contato {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--color-subtext);
+    margin-bottom: 50px;
+}
+
+.container .h-contato .h-title-contato h2 {
+    margin-top: 5%;
+    font-size: 26px;
+}
+
+.container .h-contato .item {
+    width: 100%;
+    min-height: 80px;
+}
+
+.container .h-contato .item p,a {
+    font-weight: normal;
+    font-size: 18px;
+    color:var(--color-subtext);
+    text-decoration: none;
+     text-align: justify;
+}
+/*rodapé*/
+footer{
+width:100%;
+height:20px;
+background-color: var(--color-subtext);
+}
+
