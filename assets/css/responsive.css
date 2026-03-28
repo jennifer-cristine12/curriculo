@@ -1,9 +1,11 @@
-@import url("./style.css");
+@import url("style.css");
 @import url("./utils.css");
 @import url("./components/home.css");
+@import url("./responsive.css");
 /*tablet*/
 
-@media screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
     .container .h-habilidades .h-item {
         display: flex;
         flex-direction: row;
@@ -15,11 +17,17 @@
 }
 
 /*mobile*/
-@media screen and(max-width: 425px) {
+@media (max-width: 550px) {
 
     .container .h-name {
         margin-top: 10%;
         margin-bottom: 50px;
+    }
+
+    .container .h-sobre .paragrfo {
+        font-weight: normal;
+        text-align: justify;
+        font-size: 18px;
     }
 
     .container .h-name h1 {
@@ -55,27 +63,79 @@
 
     .container .h-experiencia .h-items .item {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         flex-direction: column !important;
         min-height: 220px;
         width: 100%;
         margin-bottom: 50px;
     }
-    .container .h-experiencia .h-items .item .work{
+
+    .container .h-experiencia .h-items .item .work,
+    .paragrfo {
         min-width: 100%;
         min-height: 80px;
     }
-    .container .h-experiencia .h-items .item .work h2,p{
-       text-align: center;
+
+    .container .h-experiencia .h-items .item .work h2 {
+        text-align: center;
     }
-    
-    .container .h-experiencia .h-items .item .work .description{
+
+    .container .h-experiencia .h-items .item .work p {
+        text-align: center;
+    }
+
+
+
+    .descricao,
+    .sobre {
         min-width: 100%;
         min-height: 100px;
     }
-    .container .h-experiencia .h-items .item .work .description h2{
+
+    /*educação*/
+
+    h1,
+    h2 {
         text-align: center;
         margin-bottom: 20px;
     }
-    
+
+    .educacao .item {
+        margin-bottom: 50px;
+    }
+
+    .educacao .item .title {
+        margin-bottom: 20px;
+    }
+
+    .educacao .item .title .h2,
+    span {
+        font-size: 22px;
+    }
+
+    /*habilidades*/
+    .container .h-habilidades .h-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container .h-habilidades .h-title-habilidades h2{
+       margin-top:5%;
+       font-size:22px;
+    }
+    .container .h-habilidades .title{
+      min-width:100%;
+      margin-bottom: 10px;
+    }
+    .container .h-habilidades .title .icon{
+     width:100%;
+     
+    }
+.h-contato .item p {
+    display: flex;
+    justify-self: center;
+       align-self: center;
+    }
 }

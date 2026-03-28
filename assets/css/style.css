@@ -1,5 +1,5 @@
-@import url("./components/home.css");
-@import url("./utils.css");
+@import "./components/home.css";
+@import "./utils.css";
 @import "./responsive.css";
 
 *{

@@ -1,7 +1,7 @@
 @import url("../theme.css");
 @import url("../style.css");
 @import url("../utils.css");
-@import "../responsive.css";
+@import url("../responsive.css");
 
 /* configurações globais */
 .container {
@@ -49,6 +49,10 @@ h2 {
     font-size: 32px;
     color: var(--color-subtext);
 }
+.container .h-sobre{
+    width:100%;
+    min-height: 100px;
+}
 
 .container .h-sobre .h-title-sobre {
     height: 50px;
@@ -61,7 +65,7 @@ h2 {
     font-size: 26px;
 }
 
-.container .h-sobre .paragrfo {
+.container .h-sobre .paragrafo, .title p{
     font-weight: normal;
     text-align: justify;
     font-size: 18px;
@@ -83,19 +87,19 @@ h2 {
 }
 
 .container .h-experiencia .h-items {
-   
+
     flex-wrap: wrap;
     min-height: 100px;
 }
 
 .container .h-experiencia .h-items .item {
-    display:flex;
+    display: flex;
     flex-direction: row;
     min-height: 220px;
 }
 
 .container .h-experiencia .h-items .item .work {
-    display:flex;
+    display: flex;
     flex-direction: column;
     min-width: 25%;
     max-width: 25%;
@@ -110,8 +114,8 @@ h2 {
 }
 
 .container .h-experiencia .h-items .item .descricao {
-     display:flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
     width: 75%;
 
     min-height: 100px;
@@ -260,11 +264,13 @@ h2 span {
     border-bottom: 2px solid var(--color-subtext);
     margin-bottom: 50px;
 }
+
 .container .h-idiomas .h-title-idiomas h2 {
     margin-top: 5%;
     font-size: 26px;
 }
-.container .h-idiomas .items{
+
+.container .h-idiomas .items {
     width: 100%;
     justify-content: space-between;
     margin-left: 0px;
@@ -274,10 +280,11 @@ h2 span {
     width: 100%;
     min-height: 80px;
 }
+
 .container .h-contato .item p {
     font-weight: normal;
     font-size: 18px;
-     text-align: justify;
+    text-align: justify;
 
 }
 
@@ -306,17 +313,18 @@ h2 span {
     min-height: 80px;
 }
 
-.container .h-contato .item p,a {
+.container .h-contato .item p,
+a {
     font-weight: normal;
     font-size: 18px;
-    color:var(--color-subtext);
+    color: var(--color-subtext);
     text-decoration: none;
-     text-align: justify;
-}
-/*rodapé*/
-footer{
-width:100%;
-height:20px;
-background-color: var(--color-subtext);
+    text-align: justify;
 }
 
+/*rodapé*/
+footer {
+    width: 100%;
+    height: 20px;
+    background-color: var(--color-subtext);
+}
