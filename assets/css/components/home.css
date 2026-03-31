@@ -34,9 +34,9 @@ h2 {
 
 .container .h-name {
     width: 100%;
-    min-height: 100%;
+    min-height: 80%;
     margin-top: 5%;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .container .h-name h1 {
@@ -95,7 +95,7 @@ h2 {
 .container .h-experiencia .h-items .item {
     display: flex;
     flex-direction: row;
-    min-height: 220px;
+    min-height: 140px;
 }
 
 .container .h-experiencia .h-items .item .work {
@@ -172,7 +172,7 @@ h2 span {
 .container .h-habilidades {
     width: 100%;
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .container .h-habilidades .h-title-habilidades {
@@ -254,7 +254,7 @@ h2 span {
 .container .h-idiomas {
     width: 100%;
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
 }
 
@@ -293,7 +293,7 @@ h2 span {
 .container .h-contato {
     width: 100%;
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .container .h-contato .h-title-contato {
@@ -321,7 +321,19 @@ a {
     text-decoration: none;
     text-align: justify;
 }
-
+.tag{
+  background-color: var(--bg-tag);
+  padding:1px 5px 1px 5px;
+  margin-left:5px;
+  border-radius: 50px;
+  border: 1px solid var(--color-border); 
+  max-width: 100px;
+}
+.tag p{
+  margin:2px;
+  color:var(--color-border);
+  text-align:center;
+}
 /*rodapé*/
 footer {
     width: 100%;

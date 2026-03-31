@@ -1,7 +1,10 @@
-:root{
+:root {
     /*variaveis de cores*/
---bg-background:#FFF;
---color-education:#232323;
---color-subtext: #0077ff;
+    --bg-background: #FFF;
+    --color-education: #232323;
+    --color-subtext: #0077ff;
+    --color-main: #a0d;
+    --bg-tag: #ccc;
+    --color-border: #555;
 
 }
