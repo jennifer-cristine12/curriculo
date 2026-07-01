@@ -4,3 +4,4 @@ O Projeto curriculo é um projeto simples pessoal com a ideia de ser uma forma d
 
 ## site
 
+https://curriculo-ten-beta.vercel.app/
