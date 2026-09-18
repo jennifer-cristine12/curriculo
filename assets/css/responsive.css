@@ -6,6 +6,12 @@
 
 
 @media (max-width: 768px) {
+    .container {
+        display: block;
+        max-width: 700px;
+        margin: auto;
+    }
+
     .container .h-habilidades .h-item {
         display: flex;
         flex-direction: row;
@@ -121,21 +127,25 @@
         width: 100%;
         margin-bottom: 20px;
     }
-    .container .h-habilidades .h-title-habilidades h2{
-       margin-top:5%;
-       font-size:22px;
+
+    .container .h-habilidades .h-title-habilidades h2 {
+        margin-top: 5%;
+        font-size: 22px;
     }
-    .container .h-habilidades .title{
-      min-width:100%;
-      margin-bottom: 10px;
+
+    .container .h-habilidades .title {
+        min-width: 100%;
+        margin-bottom: 10px;
     }
-    .container .h-habilidades .title .icon{
-     width:100%;
-     
+
+    .container .h-habilidades .title .icon {
+        width: 100%;
+
     }
-.h-contato .item p {
-    display: flex;
-    justify-self: center;
-       align-self: center;
+
+    .h-contato .item p {
+        display: flex;
+        justify-self: center;
+        align-self: center;
     }
 }

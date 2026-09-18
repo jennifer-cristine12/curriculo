@@ -6,7 +6,7 @@
 /* configurações globais */
 .container {
     width: 90%;
-    max-width: 2024px;
+    max-width: 1024px;
     min-height: 100%;
     margin: auto;
 
@@ -49,8 +49,9 @@ h2 {
     font-size: 32px;
     color: var(--color-subtext);
 }
-.container .h-sobre{
-    width:100%;
+
+.container .h-sobre {
+    width: 100%;
     min-height: 100px;
 }
 
@@ -65,7 +66,8 @@ h2 {
     font-size: 26px;
 }
 
-.container .h-sobre .paragrafo, .title p{
+.container .h-sobre .paragrafo,
+.title p {
     font-weight: normal;
     text-align: justify;
     font-size: 18px;
@@ -195,7 +197,7 @@ h2 span {
 }
 
 .container .h-habilidades .item .title {
-    min-width: 150px;
+    min-width: 160px;
 }
 
 .item h2 {
@@ -322,20 +324,23 @@ a {
     text-decoration: none;
     text-align: justify;
 }
-.tag{
-  background-color: var(--bg-tag);
-  padding:1px 5px 1px 5px;
-  margin-left:5px;
-  margin-bottom: 2px;
-  border-radius: 50px;
-  border: 1px solid var(--color-border); 
-  max-width: 100px;
+
+.tag {
+    background-color: var(--bg-tag);
+    padding: 1px 5px 1px 5px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    border-radius: 50px;
+    border: 1px solid var(--color-border);
+    max-width: 120px;
 }
-.tag p{
-  margin:2px;
-  color:var(--color-border);
-  text-align:center;
+
+.tag p {
+    margin: 2px;
+    color: var(--color-border);
+    text-align: center;
 }
+
 /*rodapé*/
 footer {
     width: 100%;
